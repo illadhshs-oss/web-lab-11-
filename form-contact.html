@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакти | TechVision</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-image: url("Fon.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: gray;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Контакти</h1>
+
+<div class="container">
+  <h2>Форма зворотного зв’язку</h2>
+  <form action="#" method="post" target="_blank">
+    <label for="name">Ім'я *</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Тема повідомлення</label>
+    <input type="text" id="subject" name="subject">
+
+    <label for="message">Повідомлення *</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Відправити</button>
+  </form>
+</div>
+
+</body>
+</html>
+
